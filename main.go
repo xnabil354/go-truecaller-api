@@ -29,7 +29,7 @@ func (tc *TrueCaller) FetchData() (string, string, string) {
 	url := fmt.Sprintf("https://xzhndvs.vercel.app/api/truecaller?nomorCode=%s&countryCode=%s", tc.nomorCode, tc.countryCode)
 	res, err := http.Get(url)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 		os.Exit(1)
 	}
 	defer res.Body.Close()
@@ -41,7 +41,7 @@ func (tc *TrueCaller) FetchData() (string, string, string) {
 	var m map[string]interface{}
 	err = json.Unmarshal([]byte(jsonStr), &m)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 		os.Exit(1)
 	}
 
