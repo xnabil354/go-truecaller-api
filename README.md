@@ -15,7 +15,8 @@
 - pkg install golang -y
 - git clone https://github.com/xnabil354/go-truecaller-api
 - cd go-truecaller-api
-- go get github.com/AlecAivazis/survey/v2
+- go get github.com/fatih/color
+- go get github.com/jedib0t/go-pretty/table
 - go run main.go
 ```
 
@@ -26,7 +27,8 @@
 - sudo apt-get install golang -y
 - git clone https://github.com/xnabil354/go-truecaller-api
 - cd node-truecaller-api
-- go get github.com/AlecAivazis/survey/v2
+- go get github.com/fatih/color
+- go get github.com/jedib0t/go-pretty/table
 - go run main.go
 ```
 
